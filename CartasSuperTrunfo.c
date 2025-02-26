@@ -1,20 +1,20 @@
 #include <stdio.h>
 
 int main() {
-    char estado1[20], estado2[20]; // %s
+    char estado1[20], estado2[20]; // %s para imprimir uma cadeia de caracteres
     char codigo1[20], codigo2[20]; // %s
     char nome1[20], nome2[20]; // %s
-    int populacao1, populacao2; // %d
-    float area1, area2; // %f
+    int populacao1, populacao2; // %d para imprimir um inteiro no formato decimal
+    float area1, area2; // %f ponto flutuante no formato padrão
     float PIB1, PIB2; // %f
     int pturistico1, pturistico2; // %d
 
     // COLETA DOS DADOS DA CARTA 1
-    printf("BORA PARA A COLETA DE DADOS DA CARTA!\n");
+    printf("BORA PARA A COLETA DE DADOS DA CARTA!\n"); // introdução
     printf("INFORMAÇÕES DA CARTA 1\n");
 
-    printf("Digite o estado: \n");
-    scanf("%s", estado1);
+    printf("Digite o estado: \n"); // o printf irá imprimir a frase "Digite o estado:" e o scanf irá permitir a entrada de dados
+    scanf("%s", estado1); // o %s para identificar a variável e ver o que precisa imprimir
 
     printf("Digite o código da carta: \n");
     scanf("%s", codigo1);
@@ -68,7 +68,7 @@ int main() {
     printf("Código: %s \n", codigo1);
     printf("Nome: %s \n", nome1);
     printf("População: %d \n", populacao1);
-    printf("Área: %.2f \n", area1);
+    printf("Área: %.2f \n", area1); //.2f para facilitar a leitura no terminal
     printf("PIB: %.2f \n", PIB1);
     printf("Pontos turísticos: %d \n", pturistico1);
 
